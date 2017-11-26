@@ -7,7 +7,7 @@
 
 ## > Tensorflow Lab Assignment #02 : 2D CNN <br>
 ><a href="https://github.com/datarocksAmy/MontePythonWithDeepLearning/wiki/TF-Lab-%232-Report">Lab #02 Wiki</a> <br>
-><a href="https://github.com/datarocksAmy/MontePythonWithDeepLearning/blob/master/Lab/TF-Lab02/Source/TFLab2CNN.py">Lab #02 Source</a> <br>
+><a href="https://github.com/datarocksAmy/MontePythonWithDeepLearning/tree/master/Lab/TF-Lab02/Source">Lab #02 Source</a> <br>
 ><a href="https://github.com/datarocksAmy/MontePythonWithDeepLearning/tree/master/Lab/TF-Lab02/Graphs">Lab #02 Documentation</a>
 
 ## > Tensorflow In-Class Exercise #03 : Tensorboard ( word2vec + Embedding words )<br>
