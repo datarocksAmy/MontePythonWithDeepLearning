@@ -12,9 +12,9 @@
 
 
 ## > Tensorflow Lab Assignment #03 : 1DCNN + LSTM + RNN (Text Classification) <br>
-><a href="https://github.com/datarocksAmy/MontePythonWithDeepLearning/wiki/TF-Lab-%232-Report">Lab #03 Wiki</a> <br>
-><a href="https://github.com/datarocksAmy/MontePythonWithDeepLearning/tree/master/Lab/TF-Lab02/Source">Lab #03 Source</a> <br>
-><a href="https://github.com/datarocksAmy/MontePythonWithDeepLearning/tree/master/Lab/TF-Lab02/Graphs">Lab #03 Documentation</a>
+><a href="https://github.com/datarocksAmy/MontePythonWithDeepLearning/wiki/TF-Lab-%233-Report">Lab #03 Wiki</a> <br>
+><a href="https://github.com/datarocksAmy/MontePythonWithDeepLearning/tree/master/Lab/TF-Lab03/Source">Lab #03 Source</a> <br>
+><a href="https://github.com/datarocksAmy/MontePythonWithDeepLearning/tree/master/Lab/TF-Lab03/Graphs">Lab #03 Documentation</a>
 
 
 ## > Tensorflow In-Class Exercise #03 : Tensorboard ( word2vec + Embedding words )<br>
