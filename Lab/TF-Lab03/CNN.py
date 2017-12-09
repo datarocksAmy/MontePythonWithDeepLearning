@@ -19,7 +19,7 @@ embedding_size = 50
 num_filters = 250
 kernelSize = 3
 hidden_size = 250
-epochs = 2
+epochsSize = 2
 
 # Load in IMDB Keras Data with 5000 Features
 print('>>>>>>> Loading data...')
@@ -70,4 +70,4 @@ cnnmodel.add(Activation('sigmoid'))
 cnnmodel.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
 
 # Test/Validate the Model
-cnnmodel.fit(x_train, y_train, batch_size=batch_size, epochs=epochs, validation_data=(x_test, y_test))
+cnnmodel.fit(x_train, y_train, batch_size=batch_size, epochs=epochsSize, validation_data=(x_test, y_test))
