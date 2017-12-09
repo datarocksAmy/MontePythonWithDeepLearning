@@ -36,38 +36,38 @@ print('x_test shape:', x_test.shape)
 
 print('>>>>>>> Build CNN Model...')
 # Initialize Sequential Model
-model = Sequential()
+cnnmodel = Sequential()
 
 # Add layer for embedding word size and total features
-model.add(Embedding(max_features, embedding_size, input_length=MAXLENGTH))
-model.add(Dropout(0.2))
+cnnmodel.add(Embedding(max_features, embedding_size, input_length=MAXLENGTH))
+cnnmodel.add(Dropout(0.2))
 
 # Add CNN layer with 1D
-model.add(Conv1D(num_filters,
+cnnmodel.add(Conv1D(num_filters,
                  kernelSize,
                  padding='valid',
                  activation='relu',
                  strides=1))
 # Add Max Pooling Layer with 1D
-model.add(GlobalMaxPooling1D())
+cnnmodel.add(GlobalMaxPooling1D())
 
 # Add Vanilla Layer
-model.add(Dense(hidden_size))
-model.add(Dropout(0.2))
+cnnmodel.add(Dense(hidden_size))
+cnnmodel.add(Dropout(0.2))
 
 # Add Activation Function - ReLU
-model.add(Activation('relu'))
+cnnmodel.add(Activation('relu'))
 
 # Sqeeze into 1 Layer Output
-model.add(Dense(1))
+cnnmodel.add(Dense(1))
 
 # Use another Activation Function - Sigmoid to boil in everything
-model.add(Activation('sigmoid'))
+cnnmodel.add(Activation('sigmoid'))
 
 # Compile the whole model
 # Calculate loss using cross enropy
 # Calculate accruacy
-model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
+cnnmodel.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
 
 # Test/Validate the Model
-model.fit(x_train, y_train, batch_size=batch_size, epochs=epochs, validation_data=(x_test, y_test))
+cnnmodel.fit(x_train, y_train, batch_size=batch_size, epochs=epochs, validation_data=(x_test, y_test))
